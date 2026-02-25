@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tu_proyecto/screens/inicio_screen.dart'; // Importa tu pantalla
+import 'package:practica_6_registro_talleres/screens/inicio_screen.dart'; // Importa tu pantalla
 
 void main() => runApp(const MiAppTalleres());
 

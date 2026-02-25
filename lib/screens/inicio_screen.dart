@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'formulario_screen.dart'; // Importante para navegar a la sig. pantalla
+import 'package:practica_6_registro_talleres/screens/formulario_screen.dart'; // Importante para navegar a la sig. pantalla
 
 class InicioScreen extends StatelessWidget {
   const InicioScreen({super.key});
