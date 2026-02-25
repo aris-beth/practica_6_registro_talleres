@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:practica_6_registro_talleres/screens/inicio_screen.dart'; // Importa tu pantalla
+import 'screens/inicio_screen.dart';
+import 'screens/registro_screen.dart';
+import 'screens/perfil_screen.dart';
 
-void main() => runApp(const MiAppTalleres());
+void main() {
+  runApp(const MiAppTalleres());
+}
 
 class MiAppTalleres extends StatelessWidget {
   const MiAppTalleres({super.key});
@@ -12,7 +16,12 @@ class MiAppTalleres extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Registro de Talleres',
       theme: ThemeData(primarySwatch: Colors.indigo),
-      home: const InicioScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const InicioScreen(),
+        '/registro': (context) => const RegistroScreen(),
+        '/perfil': (context) => const PerfilScreen(),
+      },
     );
   }
 }
